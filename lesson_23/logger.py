@@ -1,7 +1,7 @@
 import logging
 
 logger = logging.getLogger(__name__)
-# logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.DEBUG)
 # logging.DEBUG
 # logging.INFO
 # logging.WARNING
@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # Створюємо обробник для запису в файл
 file_handler = logging.FileHandler('log_file.log')
-# file_handler.setLevel(logging.INFO)
+file_handler.setLevel(logging.DEBUG)
 
 # Створюємо обробник для виводу в консоль
 console_handler = logging.StreamHandler()
